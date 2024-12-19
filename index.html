@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetShark</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">NetShark</div>
+            <div class="nav-links">
+                <a href="#" class="tab-link active" data-tab="home">HOME</a>
+                <a href="#" class="tab-link" data-tab="features">FEATURES</a>
+                <a href="#" class="tab-link" data-tab="usage">USAGE</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="tab-content active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>ADVANCED NETWORK ANALYSIS</h1>
+                    <p>A powerful Python-based packet analyzer that provides real-time network traffic monitoring, protocol analysis, and comprehensive packet capture capabilities.</p>
+                    
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="icon">📊</div>
+                            <p>Real-time packet capture and analysis with live statistics and protocol distribution</p>
+                            <a href="#" class="more-details">VIEW FEATURES ➜</a>
+                        </div>
+                        <div class="info-card">
+                            <div class="icon">🔍</div>
+                            <p>Detailed packet inspection with support for IP, TCP, UDP, ICMP, ARP, and DNS protocols</p>
+                            <a href="#" class="more-details">VIEW FEATURES ➜</a>
+                        </div>
+                        <div class="info-card">
+                            <div class="icon">💾</div>
+                            <p>Automatic PCAP file generation for further analysis and packet logging</p>
+                            <a href="#" class="more-details">VIEW FEATURES ➜</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="tab-content">
+            <div class="features-container">
+                <h2>KEY FEATURES</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>Live Statistics</h3>
+                        <ul>
+                            <li>Real-time packet count and rate (packets/sec)</li>
+                            <li>Protocol distribution tracking</li>
+                            <li>Top connections monitoring</li>
+                            <li>Duration-based statistics</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Protocol Support</h3>
+                        <ul>
+                            <li>IP packet analysis</li>
+                            <li>TCP/UDP traffic monitoring</li>
+                            <li>ICMP packet inspection</li>
+                            <li>ARP request tracking</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Capture Capabilities</h3>
+                        <ul>
+                            <li>Interface auto-detection</li>
+                            <li>Custom BPF filtering</li>
+                            <li>PCAP file generation</li>
+                            <li>Memory-efficient processing</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Advanced Features</h3>
+                        <ul>
+                            <li>Colorized output</li>
+                            <li>Verbose logging options</li>
+                            <li>Interrupt handling</li>
+                            <li>Thread-safe operations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Usage Section -->
+        <section id="usage" class="tab-content">
+            <div class="usage-container">
+                <h2>USAGE GUIDE</h2>
+                <div class="usage-content">
+                    <div class="installation">
+                        <h3>Installation</h3>
+                        <pre><code>Installation: git clone<a href="https://github.com/Bajinder17/NetShark"> https://github.com/Bajinder17/NetShark</a>
+pip install -r requirements.txt</code></pre>
+                    </div>
+                    
+                    <div class="basic-usage">
+                        <h3>Basic Commands</h3>
+                        <pre><code># Basic capture on default interface
+python network_analyzer.py
+
+# Specify interface
+python network_analyzer.py -i eth0
+
+# Apply BPF filter
+python network_analyzer.py -f "tcp port 80"
+
+# Enable verbose output
+python network_analyzer.py -v
+
+# Custom output file
+python network_analyzer.py -o custom_capture.pcap</code></pre>
+                    </div>
+
+                    <div class="usage-notes">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Automatic interface detection if not specified</li>
+                            <li>Live statistics display with Ctrl+C to stop</li>
+                            <li>Automatic PCAP file generation</li>
+                            <li>Memory-efficient packet processing</li>
+                            <li>Colorized output for better readability</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" title="GitHub"><img src="github.png" alt="GitHub"></a>
+            <a href="#" title="Documentation"><img src="docs.png" alt="Documentation"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
